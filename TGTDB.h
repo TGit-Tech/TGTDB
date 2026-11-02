@@ -38,33 +38,29 @@
 // ON/OFF Code-Sections
 // 0=All Importance-Levels OFF in this code-section.
 // 1=Active; Importance-levels as assigned above.
-// DB_GEN No Section      DBERROR | DBENTER | DBINFO
 // DBUI	  User Interface	Menus, displays, buttons, user input, and other user-facing interactions.
 // DBHW	  Hardware	      GPIO, sensors, relays, physical interfaces, and hardware control logic.
 // DBL	  Links	          RF, serial, USB, and communications between devices, classes, or subsystems.
 // DBDB	  Database	      Complex data structures, DIT records, structured data storage, and handling.
 // DBH	  Helpers	        Encoding, decoding, conversions, bit manipulation, and reusable utility functions.
 // DBS	  System	        Initialization, configuration, system state, and overall system operation.
-#ifndef DB_GEN
-  #define DB_GEN    0
-#endif
 #ifndef DBUI
-  #define DBUI      0
+  #define DBUI      1
 #endif
 #ifndef DBHW
-  #define DBHW      0
+  #define DBHW      1
 #endif
 #ifndef DBDB
-  #define DBDB      0
+  #define DBDB      1
 #endif
 #ifndef DBL
-  #define DBL       0
+  #define DBL       1
 #endif
 #ifndef DBH
-  #define DBH       0
+  #define DBH       1
 #endif
 #ifndef DBS
-  #define DBS       0
+  #define DBS       1
 #endif
 
 #define SERLINEZ(z) Serial.print((F(z)));
