@@ -24,6 +24,10 @@
  * @endcode
  * @{
  ************************************************/
+#if __has_include("DBConfig.h")
+  #include "DBConfig.h"
+#endif
+
 // ON/OFF Importance-Level debug (All 0 for release; Code-Section won't matter.)
 #ifndef DB_ERROR
   #define DB_ERROR  0
